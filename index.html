@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
+        <!-- Montserrat font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
         <!-- Fontawesome -->
         <link rel="stylesheet" href="css/all.css">
         
@@ -15,34 +19,36 @@
     <body>
         <!-- Top of the page -->
         <header>
-            <h3 class="uppercase white-txt">Upgrade</h3>
+            <h4 class="uppercase white-txt inline-b">Upgrade</h4>
         </header>
         <!-- /Top of the page -->
 
         <!-- Sidebar -->
         <nav>
-            <img src="img/logo.svg" alt="Spotify Logo">
-            <div id="links">
-                <img src="img/home.svg" alt="Home" id="home"><span class="white-txt">Home</span><br>
-                <img src="img/search.svg" alt="Search"><span class="grey-txt">Search</span><br>
-                <img src="img/libreria.svg" alt="Library"><span class="grey-txt">Library</span>
+            <div id="nav-top">
+                <img id="logo" src="img/logo.svg" alt="Logo">
+                <div id="links">
+                    <div><img id="home" class="inline-b" src="img/home.svg" alt="Home"><span class="white-txt inline-b">Home</span></div>
+                    <div><img class="inline-b" src="img/search.svg" alt="Search"><span class="grey-txt inline-b">Search</span></div>
+                    <div><img class="inline-b" src="img/libreria.svg" alt="Library"><span class="grey-txt inline-b">Library</span></div>
+                </div>
+                <div id="playlist">
+                    <h4 class="uppercase white-txt">Playlist</h4>
+                    <i class="fas fa-plus inline-b"></i><span class="grey-txt inline-b">Create Playlist</span><br>
+                    <span class="name grey-txt inline-b">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b">Playlist Name</span>
+                </div>
             </div>
-            <div id="playlist">
-                <h3 class="uppercase white-txt">Playlist</h3>
-                <div id="create"><i class="fas fa-3x fa-plus-square grey-txt"></i><span class="grey-txt">Create playlist</span></div>
-                <span class="grey-txt">Playlist name</span><br>
-                <span class="grey-txt">Playlist name</span><br>
-                <span class="grey-txt">Playlist name</span><br>
-                <span class="grey-txt">Playlist name</span><br>
-                <span class="grey-txt">Playlist name</span><br>
-                <span class="grey-txt">Playlist name</span><br>
-                <span class="grey-txt">Playlist name</span>
-            </div>
-            <div id="profile">
-                <i class="fas fa-arrow-circle-down grey-txt"></i><span class="grey-txt">Install app</span><br>
+            <div id="nav-btm">
+                <i class="fas fa-arrow-down grey-txt inline-b"></i><span class="grey-txt inline-b">Install app</span>
                 <hr>
-                <img src="img/profile.svg" alt="Profile"><span class="white-txt">John Doe</span>
-            </div>
+                <img class="inline-b" src="img/profile.svg" alt="Profile"><span class="inline-b white-txt">John Doe</span>
+            </div>   
         </nav>
         <!-- /Sidebar -->
 
