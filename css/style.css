@@ -23,6 +23,10 @@ span {
     vertical-align: middle;
 }
 
+.flex {
+    display: flex;
+}
+
 .white-txt {
     color: #ffffff;
 }
@@ -60,6 +64,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 nav > div {
     padding: 0 30px;
@@ -105,7 +110,7 @@ nav > div {
     border-color: #636363;
 }
 #nav-btm img {
-    height: 20px;
+    height: 25px;
     margin-right: 10px;
     border-radius: 50%;
     background-color: #636363;
@@ -120,6 +125,72 @@ nav > div {
 footer {
     width: 100%;
     height: 80px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     background-color: #282828;
+}
+
+#footer-left {
+    width: 18%;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer-left img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+#footer-center {
+    width: 62%;
+}
+#footer-center .flex {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#footer-center i {
+    margin: 0 10px;
+}
+#footer-center .flex hr {
+    width: 20%;
+    height: 4px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border-color: #636363;
+    background-color: #636363;
+}
+#footer-center .flex .progress {
+    width: 5%;
+    position: absolute;
+    left: 39%;
+    border-color: #c1c1c1;
+    background-color: #c1c1c1;
+}
+#footer-right {
+    width: 18%;
+    align-items: center;
+    position: relative;
+}
+#footer-right i {
+    margin: 0 10px;
+}
+#footer-right hr {
+    width: 20%;
+    height: 4px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border-color: #636363;
+    background-color: #636363;
+}
+
+#footer-right .progress {
+    width: 5%;
+    position: absolute;
+    left: 33%;
+    border-color: #c1c1c1;
+    background-color: #c1c1c1;
 }
 /* --Footer */
