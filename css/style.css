@@ -1,0 +1,129 @@
+/* Common */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    font-weight: bold;
+}
+
+.white-txt {
+    color: #ffffff;
+}
+.grey-txt {
+    color: #636363;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+/* --Common */
+
+/* Top of the page */
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #080b12;
+}
+header h3 {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+/* --Top of the page */
+
+/* Sidebar */
+nav {
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav > img {
+    height: 50px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#links img {
+    height: 25px;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+#home {
+    display: inline-block;
+    padding-left: 20px;
+    border-left: 2px solid #adff2f;
+}
+
+#playlist h3 {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+#playlist i {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+#playlist span {
+    display: inline-block;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+#create {
+    line-height: 30px;
+}
+
+#profile {
+    padding-left: 20px;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+}
+#profile i {
+    margin-right: 10px;
+}
+#profile hr {
+    width: 200px;
+    margin: 20px 0;
+    border-color: #808080;
+}
+#profile img {
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #808080;
+}
+/* --Sidebar */
+
+/* Body of the page */
+
+/* --Body of the page */
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #282828;
+}
+/* --Footer */
