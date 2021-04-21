@@ -45,7 +45,7 @@ header {
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    background-color: #080b12;
+    background-color: rgba(0,0,0,0.5);
 }
 header h4 {
     height: 30px;
@@ -65,6 +65,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 10px;
+    background-color: #000000;
 }
 nav > div {
     padding: 0 30px;
@@ -121,7 +122,40 @@ nav > div {
 /* --Sidebar */
 
 /* Body of the page */
+main {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 230px;
+    margin-right: 0;
+    background-color: #141922;
+}
+main > .flex:not(.recently) {
+    justify-content: center;
+}
+main > .flex > ul > li {
+    margin: 0 10px;
+    font-size: 14px;
+}
 
+main h2 {
+    margin: 30px 0;
+}
+
+.recently {
+    flex-wrap: wrap;
+}
+.image {
+    width: calc((100% / 6) - 20px);
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    text-align: center;
+}
+.image img {
+    width: 100%;
+    margin-bottom: 20px;
+}
 /* --Body of the page */
 
 /* Footer */
@@ -148,6 +182,7 @@ footer {
 
 #footer-center {
     width: 50%;
+    padding-top: 10px;
 }
 #footer-center .flex {
     position: relative;
@@ -155,54 +190,66 @@ footer {
     align-items: center;
 }
 #footer-center i {
-    margin: 0 1%;
+    margin: 0 5%;
 }
 #footer-center .flex hr {
     width: 20%;
     height: 4px;
-    margin: 0 10px;
-    border-radius: 10px;
-    border-color: #636363;
-    background-color: #636363;
-}
-#footer-center .flex .progress {
-    width: 5%;
-    position: absolute;
-    left: 39%;
-    border-color: #c1c1c1;
-    background-color: #c1c1c1;
-}
-#footer-right {
-    width: 25%;
-    align-items: center;
-    position: relative;
-}
-#footer-right i {
-    margin: 0 10px;
-}
-#footer-right hr {
-    width: 20%;
-    height: 4px;
-    margin: 0 10px;
+    margin: 0 1%;
     border-radius: 10px;
     border-color: #636363;
     background-color: #636363;
 }
 
-#footer-right .progress {
-    width: 5%;
-    position: absolute;
-    left: 33%;
-    border-color: #c1c1c1;
-    background-color: #c1c1c1;
+#footer-right {
+    width: 25%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#footer-right i {
+    margin: 0 3%;
+}
+#footer-right hr {
+    width: 20%;
+    height: 4px;
+    margin: 0 1%;
+    border-radius: 10px;
+    border-color: #636363;
+    background-color: #636363;
 }
 /* --Footer */
+
+/* Tablet landscape specific */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .image {
+        width: calc((100% / 4) - 20px);
+        margin-bottom: 40px;
+    }
+
+}
+/* --Tablet landscape specific */
+
+/* Tablet portrait specific */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .image {
+        width: calc((100% / 2) - 20px);
+        margin-bottom: 30px;
+    }
+
+}
+/* --Tablet portrait specific */
 
 /* Smartphone specific */
 @media screen and (max-width: 767px) {
 
     nav {
         width: 50px;
+    }
+
+    h2 {
+        font-size: 16px;
     }
 
     #logo {
@@ -212,23 +259,53 @@ footer {
         height: 30px;
         display: block;
         margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     #nav-top span,
     #nav-top h4,
+    #nav-top i,
     #nav-btm span {
         display: none;
     }
 
+    #
+
+    main {
+        width: calc(100% - 50px);
+        padding-left: 60px;
+    }
+    main > .flex > ul > li {
+        font-size: 10px;
+    }
+    .image {
+        width: calc((100% / 2) - 20px);
+        margin-bottom: 20px;
+    }
+    .image h3 {
+        font-size: 14px;
+    }
+
+    #footer-left,
+    #footer-center,
     #footer-right {
-        display: none;
+        font-size: 10px;
     }
     #footer-left,
     #footer-center {
-        width: 50%;
+        width: 40%;
+    }
+    #footer-left span {
+        font-size: 8px;
     }
     #footer-left img {
         height: 25px;
+        display: inline-block;
+    }
+    #footer-right {
+        width: 20%;
+        justify-content: center;
     }
 
 }
