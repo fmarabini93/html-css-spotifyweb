@@ -89,7 +89,7 @@ nav {
     background-color: #000000;
 }
 nav > div {
-    padding-left: 30px;
+    padding: 0 15px
 }
 
 #logo {
@@ -132,7 +132,13 @@ nav > div {
 .name {
     margin: 10px 0;
 }
-
+#nav-btm {
+    position: sticky;
+    bottom: 80px;
+    left: 0;
+    padding: 5px 15px;
+    background-color: #000000;
+}
 #nav-btm i {
     padding: 3px;
     margin-right: 10px;
