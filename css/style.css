@@ -25,6 +25,11 @@ a:hover i {
     color: #ffffff;
 }
 
+.hover-underline:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
 .inline-b {
     display: inline-block;
     vertical-align: middle;
@@ -193,7 +198,7 @@ main h2 {
 }
 .image:hover .layover {
     opacity: 1;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 /* --Body of the page */
 
@@ -205,7 +210,7 @@ footer {
     bottom: 0;
     z-index: 3;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     background-color: #282828;
 }
 
@@ -231,15 +236,35 @@ footer {
 #footer-center i {
     margin: 0 5%;
 }
-#footer-center .flex hr {
+.progress-border {
     width: 60%;
     height: 4px;
+    position: relative;
     margin: 0 1%;
     border-radius: 10px;
     border-color: #636363;
     background-color: #636363;
 }
-
+.progress-bar {
+    width: 25%;
+    height: 4px;
+    background-color: #c1c1c1;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    opacity: 0;
+    top: -3px;
+    left: 25%;
+    background-color: #ffffff;
+}
+.progress-border:hover .progress-bar {
+    background-color: #b8f652;
+}
+.progress-border:hover .point {
+    opacity: 1;
+}
 #footer-right {
     width: 25%;
     justify-content: flex-end;
