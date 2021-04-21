@@ -89,7 +89,7 @@ nav {
     background-color: #000000;
 }
 nav > div {
-    padding: 0 30px;
+    padding-left: 30px;
 }
 
 #logo {
@@ -106,6 +106,10 @@ nav > div {
     margin-right: 10px;
 }
 
+#home {
+    border-left: 2px solid #b8f652;
+}
+
 .xs-visible {
     display: none;
 }
@@ -120,6 +124,9 @@ nav > div {
 }
 #playlist .fa-plus {
     color: #000000;
+}
+#playlist a:hover .fa-plus {
+    background-color: #ffffff;
 }
 
 .name {
@@ -167,6 +174,10 @@ main h2 {
 #main-nav {
     justify-content: center;
     flex-wrap: wrap;    
+}
+
+#highlights {
+    border-bottom: 2px solid #b8f652;
 }
 
 .recently {
