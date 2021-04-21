@@ -26,70 +26,101 @@
         <!-- Sidebar -->
         <nav>
             <div id="nav-top">
-                <img id="logo" src="img/logo.svg" alt="Logo">
-                <img id="small-logo" src="img/logo-small.svg" alt="Small logo">
+                <img id="logo" class="xs-hidden" src="img/logo.svg" alt="Logo">
+                <img class="xs-visible" src="img/logo-small.svg" alt="Small logo">
                 <div id="links">
-                    <div class="icons"><img id="home" class="inline-b" src="img/home.svg" alt="Home"><span class="white-txt inline-b">Home</span></div>
-                    <div class="icons"><img class="inline-b" src="img/search.svg" alt="Search"><span class="grey-txt inline-b">Search</span></div>
-                    <div class="icons"><img class="inline-b" src="img/libreria.svg" alt="Library"><span class="grey-txt inline-b">Library</span></div>
+                    <div><img id="home" class="inline-b xs-hidden" src="img/home.svg" alt="Home"><span class="white-txt inline-b xs-hidden">Home</span></div>
+                    <img class="xs-visible" src="img/grey-home.svg" alt="Grey Home">
+                    <div><img class="inline-b xs-hidden" src="img/search.svg" alt="Search"><span class="grey-txt inline-b xs-hidden">Search</span></div>
+                    <img class="xs-visible" src="img/grey-search.svg" alt="Grey Search">
+                    <div><img class="inline-b xs-hidden" src="img/libreria.svg" alt="Library"><span class="grey-txt inline-b xs-hidden">Library</span></div>
+                    <img class="xs-visible" src="img/grey-libreria.svg" alt="Grey Library">
                 </div>
                 <div id="playlist">
-                    <h4 class="uppercase white-txt">Playlist</h4>
-                    <i class="fas fa-plus inline-b"></i><span class="grey-txt inline-b">Create Playlist</span><br>
-                    <span class="name grey-txt inline-b">Playlist Name</span><br>
-                    <span class="name grey-txt inline-b">Playlist Name</span><br>
-                    <span class="name grey-txt inline-b">Playlist Name</span><br>
-                    <span class="name grey-txt inline-b">Playlist Name</span><br>
-                    <span class="name grey-txt inline-b">Playlist Name</span><br>
-                    <span class="name grey-txt inline-b">Playlist Name</span><br>
-                    <span class="name grey-txt inline-b">Playlist Name</span>
+                    <h4 class="uppercase white-txt xs-hidden">Playlist</h4>
+                    <i class="fas fa-plus inline-b xs-hidden"></i><span class="grey-txt inline-b xs-hidden">Create Playlist</span><br>
+                    <span class="name grey-txt inline-b xs-hidden">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b xs-hidden">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b xs-hidden">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b xs-hidden">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b xs-hidden">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b xs-hidden">Playlist Name</span><br>
+                    <span class="name grey-txt inline-b xs-hidden">Playlist Name</span>
                 </div>
             </div>
             <div id="nav-btm">
-                <i class="fas fa-arrow-down grey-txt inline-b"></i><span class="grey-txt inline-b">Install app</span>
+                <i class="fas fa-arrow-down grey-txt inline-b"></i><span class="grey-txt inline-b xs-hidden">Install app</span>
                 <hr>
-                <img class="inline-b" src="img/profile.svg" alt="Profile"><span class="inline-b white-txt">John Doe</span>
+                <img class="inline-b" src="img/profile.svg" alt="Profile"><span class="inline-b white-txt xs-hidden">John Doe</span>
             </div>   
         </nav>
         <!-- /Sidebar -->
 
         <!-- Body of the page -->
         <main>
-            <div class="flex">
-                <ul>
-                    <li class="uppercase grey-txt inline-b">Highlights</li>
-                    <li class="uppercase grey-txt inline-b">Podcast</li>
-                    <li class="uppercase grey-txt inline-b">Rankings</li>
-                    <li class="uppercase grey-txt inline-b">Genres and moods</li>
-                    <li class="uppercase grey-txt inline-b">New songs</li>
-                    <li class="uppercase grey-txt inline-b">Find</li>
-                </ul>
-            </div>
+            <ul id="main-nav" class="flex">
+                <li class="uppercase grey-txt inline-b">Highlights</li>
+                <li class="uppercase grey-txt inline-b">Podcast</li>
+                <li class="uppercase grey-txt inline-b">Rankings</li>
+                <li class="uppercase grey-txt inline-b">Genres and moods</li>
+                <li class="uppercase grey-txt inline-b">New songs</li>
+                <li class="uppercase grey-txt inline-b">Find</li>
+            </ul>
             <h2 class="white-txt">Recently played</h2>
             <div class="recently flex">
                 <div class="image">
                     <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                    <h3 class="white-txt">Heavy Metal</h3>
+                    <h4 class="white-txt">Heavy Metal</h4>
+                    <span class="grey-txt">Subtitle</span>
                 </div>
                 <div class="image">
                     <img src="img/stranger.jpeg" alt="Stranger Things">
-                    <h3 class="white-txt">Stranger Things, Vol. 1 (a Netflix original series soundtrack)</h3>
+                    <h4 class="white-txt">Stranger Things, Vol. 1 (a Netflix original series soundtrack)</h4>
+                    <span class="grey-txt">Kyle Dixon and Michael Stein</span>
                 </div>
                 <div class="image">
                     <img src="img/aquietplace.jpeg" alt="A Quiet Place">
-                    <h3 class="white-txt">A Quiet Place</h3>
+                    <h4 class="white-txt">A Quiet Place</h4>
+                    <span class="grey-txt">Subtitle</span>
                 </div>
                 <div class="image">
                     <img src="img/split.jpeg" alt="Split">
-                    <h3 class="white-txt">Split</h3>
+                    <h4 class="white-txt">Split</h4>
+                    <span class="grey-txt">Subtitle</span>
                 </div>
                 <div class="image">
                     <img src="img/cure.jpeg" alt="A Cure for Wellness">
-                    <h3 class="white-txt">A Cure for Wellness</h3>
+                    <h4 class="white-txt">A Cure for Wellness</h4>
+                    <span class="grey-txt">Subtitle</span>
                 </div>
                 <div class="image">
                     <img src="img/sinister.jpeg" alt="Sinister">
-                    <h3 class="white-txt">Sinister</h3>
+                    <h4 class="white-txt">Sinister</h4>
+                    <span class="grey-txt">Subtitle</span>
+                </div>
+            </div>
+            <h2 class="white-txt">Created for John Doe</h2>
+            <span class="grey-txt">The more you listen, the more accurate suggestions will be</span>
+            <div class="made-for flex">
+                <div class="image">
+                    <img src="img/radar.jpeg" alt="Radar">
+                    <h4 class="white-txt">Release Radar</h4>
+                </div>
+                <div class="image">
+                    <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                    <h4 class="white-txt">Daily Mix 1</h4>
+                </div>
+            </div>
+            <h2 class="white-txt">Popular Artists</h2>
+            <span class="grey-txt">The more you listen, the more accurate suggestions will be</span>
+            <div class="popular flex">
+                <div class="image">
+                    <img class="circle-img" src="img/youg.jpeg" alt="Youg">
+                    <h4 class="white-txt">Lana Del Rey</h4>
+                </div>
+                <div class="image">
+                    <img class="circle-img" src="img/einaudi.jpeg" alt="Einaudi">
+                    <h4 class="white-txt">Ludovico Einuadi</h4>
                 </div>
             </div>
             
