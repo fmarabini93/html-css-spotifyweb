@@ -328,7 +328,7 @@ footer {
 /* --Tablet portrait specific */
 
 /* Smartphone specific */
-@media screen and (max-width: 767px) {
+@media screen and (min-width:500px) and (max-width: 767px) {
 
     header {
         height: 50px;
@@ -376,12 +376,14 @@ footer {
         margin-right: 5px;
     }
 
-    #footer-left,
-    #footer-center {
-        width: 48%;
+    #footer-left {
+        width: 36%;
     }
     #footer-left img {
         height: 45px;
+    }
+    #footer-center {
+        width: 60%;
     }
     #footer-right {
         width: 4%;
@@ -391,3 +393,79 @@ footer {
 
 }
 /* --Smartphone specific */
+
+/* Very small smartphone specific */
+@media screen and (max-width: 499px) {
+
+    .xs-hidden {
+        display: none;
+    }
+    .xs-visible {
+        display: block;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    span:not(.uppercase),
+    footer {
+        font-size: 12px;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    nav {
+        width: 50px;
+    }
+
+    #small-logo {
+        height: 24px;
+    }
+
+    #nav-btm img {
+        margin-top: 10px;
+    }
+
+    main {
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+
+    #main-nav li {
+        padding: 3px 0;
+    }
+
+    .square {
+        width: calc((100% / 2) - 5px);
+        margin-bottom: 3%;
+        margin-right: 5px;
+    }
+    
+    #footer-left {
+        width: 52%;
+    }
+    #footer-left .folders a {
+        display: block;
+        padding: 2px;
+    }
+    #footer-left img {
+        margin-right: 2px;
+    }
+    #footer-center {
+        width: 44%;
+    }
+    #footer-right {
+        width: 4%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+/* --Very small smartphone specific */
